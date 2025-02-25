@@ -8,7 +8,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/home/aleksandar/my-app/flask-vote-app/venv"
+=======
+setenv VIRTUAL_ENV "/home/aleksandar/Desktop/гит александар/flask-vote-app/venv"
+>>>>>>> Running Flask app with CI/CD setup
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
