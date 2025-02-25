@@ -116,7 +116,7 @@ def vote():
     except Exception as e:
         app.logger.error(f"Error in vote: {e}")
         return "An error occurred", 500
-=======
+
     has_voted = False
     vote_stamp = request.cookies.get('vote_stamp')
 
@@ -172,7 +172,7 @@ if __name__ == '__main__':
 
 
 
-=======
+
     
     db.create_all()
     db.session.commit()
