@@ -77,7 +77,6 @@ def index():
 
 @app.route('/vote.html', methods=['POST', 'GET'])
 def vote():
-<<<<<<< HEAD
     try:
         hostname = socket.gethostname()
         poll = Poll.query.first()
@@ -163,7 +162,7 @@ def results():
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
+
     try:
         db.create_all()  # Оваа линија ќе создаде табелите
         load_seed_data()  # Повикај ја функцијата за вчитување на податоците
