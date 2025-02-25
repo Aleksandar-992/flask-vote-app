@@ -142,7 +142,7 @@ def vote():
        resp.set_cookie('vote_stamp', vote_stamp)
     
     return resp
->>>>>>> Running Flask app with CI/CD setup
+ Running Flask app with CI/CD setup
 
 @app.route('/results.html')
 def results():
@@ -204,5 +204,5 @@ if __name__ == '__main__':
           poll = Poll("", "")
     
     app.run(host='0.0.0.0', port=5004, debug=False)
->>>>>>> Running Flask app with CI/CD setup
+ Running Flask app with CI/CD setup
 
