@@ -162,11 +162,11 @@ def results():
 
 
 if __name__ == '__main__':
-
     try:
-        db.create_all()  # Оваа линија ќе создаде табелите
-        load_seed_data()  # Повикај ја функцијата за вчитување на податоците
-        app.run(host='0.0.0.0', port=5000, debug=True)
+        with app.app_context():  # Додај го ова
+            db.create_all()  # Мора да биде во контекстот на апликацијата
+            load_seed_data()  # Овде исто
+            app.run(host='0.0.0.0', port=5000, debug=True)
     except Exception as e:
         app.logger.error(f"Error during application startup: {e}")
 
