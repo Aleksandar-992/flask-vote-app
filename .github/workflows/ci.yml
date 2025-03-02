@@ -1,25 +1,12 @@
-name: CI/CD
-
-
 name: CI/CD Workflow
-
-name: CI/CD
- Add CI/CD workflow
 
 on:
   push:
     branches:
-
       - master  # Проверува дали има промени во master
   pull_request:
     branches:
       - master  # Проверува дали има PR кон master
-
-      - master  # Или вашата главна гранка
-  pull_request:
-    branches:
-      - master  # Или вашата главна гранка
- Add CI/CD workflow
 
 jobs:
   build:
@@ -32,20 +19,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
-          
-
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
           python-version: '3.8'  # Изберете верзија на Python
 
- Add CI/CD workflow
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -55,14 +30,4 @@ jobs:
         run: |
           pytest  # Претпоставува дека користите pytest за тестирање
 
-          
-      - name: Run application
-        run: |
-          python app.py
-
-
-      - name: Run tests
-        run: |
-          pytest  # Претпоставува дека користите pytest за тестирање
- Add CI/CD workflow
 
