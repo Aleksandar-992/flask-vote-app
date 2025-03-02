@@ -1,33 +1,26 @@
-<<<<<<< HEAD
+
 name: CI/CD
-=======
+
 
 name: CI/CD Workflow
 
 name: CI/CD
  Add CI/CD workflow
->>>>>>> fix-pytest-issues
 
 on:
   push:
     branches:
-<<<<<<< HEAD
-=======
 
       - master  # Проверува дали има промени во master
   pull_request:
     branches:
       - master  # Проверува дали има PR кон master
 
->>>>>>> fix-pytest-issues
       - master  # Или вашата главна гранка
   pull_request:
     branches:
       - master  # Или вашата главна гранка
-<<<<<<< HEAD
-=======
  Add CI/CD workflow
->>>>>>> fix-pytest-issues
 
 jobs:
   build:
@@ -36,8 +29,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-<<<<<<< HEAD
-=======
         
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -49,27 +40,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
->>>>>>> fix-pytest-issues
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'  # Изберете верзија на Python
 
-<<<<<<< HEAD
-=======
  Add CI/CD workflow
->>>>>>> fix-pytest-issues
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-<<<<<<< HEAD
       - name: Run tests
         run: |
           pytest  # Претпоставува дека користите pytest за тестирање
-=======
+
           
       - name: Run application
         run: |
@@ -80,5 +66,4 @@ jobs:
         run: |
           pytest  # Претпоставува дека користите pytest за тестирање
  Add CI/CD workflow
->>>>>>> fix-pytest-issues
 
