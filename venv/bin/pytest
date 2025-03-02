@@ -1,6 +1,5 @@
-#!/bin/sh
-'''exec' "/home/aleksandar/Desktop/гит александар/flask-vote-app/venv/bin/python3" "$0" "$@"
-' '''
+#!/home/aleksandar/my-app/flask-vote-app/venv/bin/python3
+
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -37,11 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-<<<<<<< HEAD
 VIRTUAL_ENV="/home/aleksandar/my-app/flask-vote-app/venv"
-=======
-VIRTUAL_ENV="/home/aleksandar/Desktop/гит александар/flask-vote-app/venv"
->>>>>>> Running Flask app with CI/CD setup
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

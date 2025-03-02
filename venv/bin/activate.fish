@@ -29,11 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/aleksandar/my-app/flask-vote-app/venv"
-=======
-set -gx VIRTUAL_ENV "/home/aleksandar/Desktop/гит александар/flask-vote-app/venv"
->>>>>>> Running Flask app with CI/CD setup
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
