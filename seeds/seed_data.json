@@ -1,16 +1,22 @@
 {
-  "poll": "Champion League Winner",
+
+  "polls":   [
+{
+ "name": "Champion League Winner 2025",
   "question": "Who will win the Champion League?",
   "options": [
-    "Juventus",
-    "Milan",
-    "Inter",
-    "Barcelona",
-    "Real Madrid",
-    "Manchester City",
-    "Arsenal",
-    "Bayern Munich",
-    "Borussia Dortmund",
-    "Other team"
+   {"text": "Juventus"},
+    {"text": "Milan"},
+    {"text": "Inter"},
+    {"text": "Barcelona"},
+    {"text":"Real Madrid"},
+    {"text":"Manchester City"},
+    {"text":"Arsenal"},
+    {"text":"Bayern Munich"},
+    {"text":"Borussia Dortmund"},
+    {"text":"Other team"}
   ]
 }
+]
+}
+
